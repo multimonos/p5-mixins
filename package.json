@@ -1,6 +1,6 @@
 {
     "name": "@multimonos/p5-mixins",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "p5js instance mode mixins",
     "main": "lib/index.js",
     "exports": "lib/index.modern.js",
@@ -22,25 +22,25 @@
     "author": "craig hopgood <searaig@gmail.com> (https://multimonos.com)",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/multimonos/p5-mixins/issues",
-        "homepage": "https://github.com/multimonos/p5-mixins#readme",
-        "dependencies": {
-            "p5": "^1.2.0"
-        },
-        "devDependencies": {
-            "@babel/core": "^7.12.10",
-            "@babel/preset-env": "^7.12.11",
-            "@types/jest": "^26.0.20",
-            "babel-jest": "^26.6.3",
-            "jest": "^26.6.3",
-            "jest-canvas-mock": "^2.3.0",
-            "microbundle": "^0.13.0"
-        },
-        "jest": {
-            "verbose": true,
-            "setupFiles": [
-                "jest-canvas-mock"
-            ]
-        }
+        "url": "https://github.com/multimonos/p5-mixins/issues"
+    },
+    "homepage": "https://github.com/multimonos/p5-mixins#readme",
+    "dependencies": {
+        "p5": "^1.2.0"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.12.10",
+        "@babel/preset-env": "^7.12.11",
+        "@types/jest": "^26.0.20",
+        "babel-jest": "^26.6.3",
+        "jest": "^26.6.3",
+        "jest-canvas-mock": "^2.3.0",
+        "microbundle": "^0.13.0"
+    },
+    "jest": {
+        "verbose": true,
+        "setupFiles": [
+            "jest-canvas-mock"
+        ]
     }
 }
