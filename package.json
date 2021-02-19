@@ -1,6 +1,6 @@
 {
     "name": "@multimonos/p5-mixins",
-    "version": "0.1.5",
+    "version": "0.1.6",
     "description": "p5js instance mode mixins",
     "main": "./lib/index.js",
     "exports": "./lib/index.modern.js",

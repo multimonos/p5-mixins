@@ -1,20 +1,20 @@
-const stack = p5Instance => fn => {
-    p5Instance.push()
+const stack = p5i => fn => {
+    p5i.push()
     fn()
-    p5Instance.pop()
-    return p5Instance
+    p5i.pop()
+    return p5i
 }
 
-const shape = p5Instance => fn => ( obj = undefined ) => ( begin = undefined ) => ( end = undefined ) => {
-    begin ? p5Instance.beginShape( begin ) : p5Instance.beginShape()
+const shape = p5i => ( fn, begin = undefined, end = undefined ) => {
+    begin ? p5i.beginShape( begin ) : p5i.beginShape()
     fn()
-    end ? p5Instance.endShape( end ) : p5Instance.endShape()
-    return p5Instance
+    end ? p5i.endShape( end ) : p5i.endShape()
+    return p5i
 }
 
 export default p => {
-    // p.stackwith = stackwith( p )
     p.stack = stack( p )
-    // p.shapewith = shapewith( p )
     p.shape = shape( p )
+    // p.shapewith = shapewith( p )
+    // p.stackwith = stackwith( p )
 }
