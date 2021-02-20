@@ -9,6 +9,7 @@
     "scripts": {
         "test": "jest",
         "build": "microbundle build",
+        "version": "npm run build && git add ./package.json && git add -A ./lib",
         "watch": "microbundle watch --no-sourcemap"
     },
     "repository": {
